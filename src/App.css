@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.navbar{
+  background-color: #472dc4;
+}
+
+.navbar-brand{
+  margin-right: 0 !important;
+}
+
+.books {
+
+  text-align: left;
+
+}
+
+/* .books .row {
+  word-wrap: break-word !important;
+} */
+
+.book{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  float: left;
+  width: 16rem;
+  height: 10rem;
+  
+}
+/* style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }} */
+.card {
+  margin: 0.5rem 0.25rem;
+  
+}
+
+.addBook, .welcome{
+  padding: 5vh 5vw !important;
+  margin-bottom: 5vh;
+  background-color: #c5cae9;
+  border-radius: 5%;
+}
+
+.error{
+  color: red;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contactSection {
+  padding: 5vh 0vw;
+  background-color: #472dc4;
+  color: white;
+  clear: both;
+}
+
+.contactSection p {
+ margin: 0;
+}
+
+.footer{
+  background-color: #472dc4;
+  border-top: 1px solid #bdbdbd; 
+}
+
+
