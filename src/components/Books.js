@@ -29,7 +29,7 @@ class Books extends Component {
             <Container id="books" className="books">
                 <Row>
                     <Col>
-                        <h1 style={{ textAlign: 'center' }}>Available Books</h1>
+                        <h1 style={{ textAlign: 'center' }}>AVAILABLE BOOKS</h1>
                     </Col>
                 </Row>
 

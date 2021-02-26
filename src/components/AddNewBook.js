@@ -21,7 +21,7 @@ function LoginForm({ Login, error }) {
                 <Col md={8}>
                     <Form onSubmit={submitHandler} className="addBook">
                         <div>
-                            <h2>Add New Book</h2>
+                            <h2>ADD NEW BOOK</h2>
                             {(error != "") ? (<div className="error">{error}</div>) : ""}
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Book Name</Form.Label>
