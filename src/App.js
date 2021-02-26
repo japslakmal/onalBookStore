@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -17,7 +18,7 @@ function App() {
     password: "pwdadmin"
   }
 
-  const [user, setUser] = useState({username:""});
+  const [user, setUser] = useState({ username: "" });
   const [error, setError] = useState("");
 
   const Login = details => {
@@ -27,15 +28,15 @@ function App() {
       db.collection('books').add(details)
       setUser({
         username: details.username
-        
+
       });
     } else {
-      setError("Details do not match");
+      setError("Details do not match check your User Name and Password");
     }
   }
 
   const Logout = () => {
-    setUser({username:""});
+    setUser({ username: "" });
   }
 
   return (
@@ -44,14 +45,26 @@ function App() {
       <Hero />
       <Books />
       {(user.username != "") ? (
-        <div className="welcome">
-          <h2>Welcome, {user.username}</h2>
-          <h2>Succesfully added a new book</h2>
-          <button onClick={Logout}>Logut</button> 
-        </div>
+        <Container style={{clear: 'both'}}>
+          <Row>
+            <Col md={2}></Col>
+
+            <Col md={8}>
+              <div className="welcome">
+                <h2>Welcome, {user.username}</h2>
+                <h2>Succesfully added a new book</h2>
+                <p>After adding new book repress the page</p>
+                <Button onClick={Logout}>Add More</Button>
+              </div>
+            </Col>
+
+            <Col md={2}></Col>
+          </Row>
+        </Container>
+
       ) : (
-        <AddNewBook Login={Login} error={error} />
-      )}
+          <AddNewBook Login={Login} error={error} />
+        )}
       <Contact />
       <Footer />
     </div>

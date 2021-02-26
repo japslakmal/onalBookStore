@@ -25,32 +25,32 @@ function LoginForm({ Login, error }) {
                             {(error != "") ? (<div className="error">{error}</div>) : ""}
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Book Name</Form.Label>
-                                <Form.Control type="text" name="bookName" placeholder="Enter Book Name" onChange={e => setDetails({ ...details, bookName: e.target.value })} value={details.bookName} />
+                                <Form.Control type="text" name="bookName" placeholder="Enter Book Name" required onChange={e => setDetails({ ...details, bookName: e.target.value })} value={details.bookName} />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Author</Form.Label>
-                                <Form.Control type="text" name="author" placeholder="Author" onChange={e => setDetails({ ...details, author: e.target.value })} value={details.author} />
+                                <Form.Control type="text" name="author" placeholder="Author" required onChange={e => setDetails({ ...details, author: e.target.value })} value={details.author} />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Price</Form.Label>
-                                <Form.Control type="text" name="price" placeholder="Price" onChange={e => setDetails({ ...details, price: e.target.value })} value={details.price} />
+                                <Form.Control type="text" name="price" placeholder="Price" required onChange={e => setDetails({ ...details, price: e.target.value })} value={details.price} />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>International Standard Book Number</Form.Label>
-                                <Form.Control type="text" name="isbn" placeholder="Type ISBN" onChange={e => setDetails({ ...details, isbn: e.target.value })} value={details.isbn} />
+                                <Form.Control type="text" name="isbn" placeholder="Type ISBN" required onChange={e => setDetails({ ...details, isbn: e.target.value })} value={details.isbn} />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>User Name</Form.Label>
-                                <Form.Control type="text" name="username" placeholder="Type User Name" onChange={e => setDetails({ ...details, username: e.target.value })} value={details.username} />
+                                <Form.Control type="text" name="username" placeholder="Type User Name" required onChange={e => setDetails({ ...details, username: e.target.value })} value={details.username} />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" name="password" placeholder="Password" onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
+                                <Form.Control type="password" name="password" placeholder="Password" required onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
                             </Form.Group>
                             <Button variant="primary" type="submit">
                                 Add Book
