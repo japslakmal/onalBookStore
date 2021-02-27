@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: #212121;
 }
 
 .Navbar {
@@ -34,6 +35,10 @@
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
 }
 
+.book .text-muted {
+  color: #757575 !important;
+}
+
 .books h1 {
   text-align: center;
   margin: 1rem;
@@ -45,17 +50,43 @@
 }
 
 .addBook, .welcome {
-  padding: 5vh 5vw !important;
+  padding: 5vh 5vw ;
   margin-bottom: 3vh;
   background-color: #C5CAE9;
   border-radius: 25px;
   
 }
 
+.addBook .btn-outline-primary {
+  font-weight: 600;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.addBook .btn-outline-primary:hover {
+  font-weight: 600;
+  color: #ffffff;
+  border: 2px solid #4CAF50;
+  background-color: #4CAF50;
+}
+
 .error {
   color: red;
   padding: 1rem;
   font-size: 2rem;
+}
+
+.welcome .btn-outline-primary {
+  font-weight: 600;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+}
+
+.welcome .btn-outline-primary:hover {
+  font-weight: 600;
+  color: #ffffff;
+  border: 2px solid #4CAF50;
+  background-color: #4CAF50;
 }
 
 .contactSection {

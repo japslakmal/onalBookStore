@@ -54,7 +54,7 @@ function App() {
                 <h2>Welcome, {user.username}</h2>
                 <h2>Succesfully added a new book</h2>
                 <p>After adding new book repress the page</p>
-                <Button onClick={Logout}>Add More</Button>
+                <Button variant="outline-primary" size="lg" onClick={Logout}>ADD MORE</Button>
               </div>
             </Col>
 

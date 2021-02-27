@@ -30,12 +30,12 @@ function LoginForm({ Login, error }) {
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Author</Form.Label>
-                                <Form.Control type="text" name="author" placeholder="Author" required onChange={e => setDetails({ ...details, author: e.target.value })} value={details.author} />
+                                <Form.Control type="text" name="author" placeholder="Type Author's Name" required onChange={e => setDetails({ ...details, author: e.target.value })} value={details.author} />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Price</Form.Label>
-                                <Form.Control type="text" name="price" placeholder="Price" required onChange={e => setDetails({ ...details, price: e.target.value })} value={details.price} />
+                                <Form.Control type="text" name="price" placeholder="Type Price" required onChange={e => setDetails({ ...details, price: e.target.value })} value={details.price} />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
@@ -50,12 +50,12 @@ function LoginForm({ Login, error }) {
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" name="password" placeholder="Password" required onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
+                                <Form.Control type="password" name="password" placeholder="Type Password" required onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
                             </Form.Group>
-                            <Button variant="primary" type="submit">
-                                Add Book
+                            <Button variant="outline-primary" size="lg" type="submit">
+                                ADD BOOK
                             </Button>
-                        </div>
+                        </div>     
                     </Form>
                 </Col>
 
