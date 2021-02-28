@@ -46,7 +46,6 @@
 
 .card {
   margin: 0.5rem 0.25rem;
-  
 }
 
 .addBook, .welcome {
@@ -54,7 +53,6 @@
   margin-bottom: 3vh;
   background-color: #C5CAE9;
   border-radius: 25px;
-  
 }
 
 .addBook .btn-outline-primary {

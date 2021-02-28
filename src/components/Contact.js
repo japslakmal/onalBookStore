@@ -20,7 +20,6 @@ function Contact() {
                             <p>077 4567561</p>
                             <p>071 5896342</p>
                         </div>
-
                     </Col>
 
                     <Col>
@@ -37,9 +36,7 @@ function Contact() {
                             <p>Tissamaharama</p>
                             <p>Sri Lanka</p>
                         </div>
-
                     </Col>
-
 
                     <Col>
                         <IconContext.Provider value={{ color: "white", size: "3em", className: "global-class-name" }}>
@@ -53,7 +50,6 @@ function Contact() {
                             <p>sales@onalbookstore.com</p>
                             <p>onalbookstore@gmail.com</p>
                         </div>
-
                     </Col>
                 </Row>
             </Container>

@@ -24,7 +24,6 @@ class NavBar extends Component {
                             <Nav.Link href="#addBook">ADD BOOK</Nav.Link>
                             <Nav.Link href="#contactSection">CONTACT</Nav.Link>
                         </Nav>
-                        
                     </Navbar.Collapse>
                 </Navbar>
             </div>

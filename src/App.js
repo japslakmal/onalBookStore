@@ -61,7 +61,6 @@ function App() {
             <Col md={2}></Col>
           </Row>
         </Container>
-
       ) : (
           <AddNewBook Login={Login} error={error} />
         )}

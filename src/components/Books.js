@@ -32,7 +32,6 @@ class Books extends Component {
                         <h1>AVAILABLE BOOKS</h1>
                     </Col>
                 </Row>
-
                 <Row>
                     <Col style={{display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', flexDirection: 'row' }}>
                         {this.state.booksData.length ? (
@@ -73,13 +72,11 @@ class Books extends Component {
                                     Loading...
                                     </Button> 
                                 </div>
-                                
                             )
                         }
                     </Col>
                 </Row>
             </Container>
-
         )
     }
 }
